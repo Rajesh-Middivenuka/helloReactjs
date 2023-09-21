@@ -1,0 +1,22 @@
+{
+  "name": "helloreactjs",
+  "version": "1.0.0",
+  "description": "namasthe react",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rajesh-Middivenuka/helloReactjs.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Rajesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rajesh-Middivenuka/helloReactjs/issues"
+  },
+  "homepage": "https://github.com/Rajesh-Middivenuka/helloReactjs#readme"
+}
