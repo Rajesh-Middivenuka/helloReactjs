@@ -1,41 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import logos from "./assests/logo.jpg";
-import food from "./assests/food.jpg";
-import "./index.css";
-const Header = () => {
-  return (
-    <div className="header">
-      <div className="logo-container">
-        <img src={logos} />
-      </div>
-      <div className="nav-items">
-        <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
-          <li>Cart</li>
-        </ul>
-      </div>
-    </div>
-  );
-};
-const RestarentCard = (prop) => {
-  const { resdata } = prop;
-  console.log(resdata);
-  const { name, avgRatingString, cuisines } = resdata;
-  console.log(name);
-  return (
-    <div className="res-card">
-      <img src={food} />
-      <h3>{name}</h3>
-      <h4>{avgRatingString}</h4>
-      <h4>{cuisines.join(",")}</h4>
-      <h4>38 mins</h4>
-    </div>
-  );
-  ` `;
-};
 let resdata = [
   {
     id: "17303",
@@ -164,27 +126,4 @@ let resdata = [
     },
   },
 ];
-const Body = () => {
-  return (
-    <div className="body">
-      <div className="search">search</div>
-      <div className="res-container">
-        {resdata.map((val, id) => (
-          <RestarentCard key={id} resdata={val} />
-        ))}
-      </div>
-    </div>
-  );
-};
-const AppLayout = () => {
-  return (
-    <div className="app">
-      <Header />
-      <Body />
-    </div>
-  );
-};
-
-const heading = React.createElement("h1", {}, "hello react");
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout />);
+export default resdata;

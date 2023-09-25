@@ -22,12 +22,40 @@
   padding: 10px;
   font-size: 24px;
 }
-.res-card {
+/* .res-card {
   width: 200px;
   height: 300px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: #f0f0f0;
   overflow: visible;
+} */
+.restaurant-grid {
+  display: grid;
+  gap: 20px; /* Adjust the gap between cards */
+}
+
+.res-card {
+  width: 360;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  text-align: center;
+  text-overflow: ellipsis;
+}
+
+.res-card h4 {
+  margin: 0;
+  font-size: 18px;
+  word-wrap: break-word;
+}
+
+.res-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
 }
 .body {
   margin-left: 10px;
@@ -43,4 +71,13 @@
 .res-container {
   display: flex;
   flex-wrap: wrap;
+}
+.filter-btn {
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+.filter {
+  margin-top: 5px;
+  display: flex;
 }

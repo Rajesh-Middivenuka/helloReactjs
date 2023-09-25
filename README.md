@@ -55,3 +55,50 @@ for building npm run build.
 
 config driven UI:controling the UI using data,or conig that data or config comes from backend.
 why we need keys:
+
+///////////
+useState();
+when ever state variable method update react will render the compnent
+why react fast: react will make dom opertion very fast thats why react fast.
+=>react very good at dom operation.
+
+what is react algorthim:
+=>react use reconialation algorthim it is also knon as react fiber.
+=> on the UI we have dom
+for example we have restContainer have 15 cards over there suppose
+=> now ui changes 15 cards to 5 filter cards what react do and why react fast becase
+=> first it creates a virtual dom virtul dom is not actual dom
+=> virtual dom is representation the actual dom
+=> virtual dom is basically on react elements or objects.
+
+diff algorthim:
+for example first we have 15 cards when we write logic to remove 10 cards when ever state varible changes anothor virtual dom crates and it finds the differences between first virtual dom and second virtual and its automatically updates the changed virtual dom.
+finds out the differents between two virtual doms and updates the changed virtual dom.
+this whole algorthim is react fiber
+
+::there two approachs for fetching the data:
+
+first way: as soon as page loads we make api call and after getting data we reder it on the webpage.
+loads->api calll->render
+it is not good approach
+
+second way: as soon as the page loads we will just render UI now will make api as soon as data comes from api then render the data.
+loads->render->api call->render data again
+
+useEffect() hook is function will take two arguments first argument is call back function
+and dependeces
+when will useEffect call back function be called
+the call back function will be called after comonent render
+
+//shimmer effect
+
+why we use state variable insted of normal variable?
+when ever state varible updates react rerender the component
+
+virtual dom is not making the react fast , the react fiber which finds out the difference between two virtual doms and updates the only portion is required.
+react router dom
+=> npm install react-router-dom
+import crateBrowserRouter=> takes a lists of path in objects
+{
+path:"/"
+}
